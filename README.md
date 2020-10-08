@@ -10,7 +10,7 @@ but updated for better stability and angular, vue and react compatibility (still
 Use the install command:
 
 ```javascript
-tns plugin add nativescript-cscreenshot
+tns plugin add @enduco/nativescript-cscreenshot
 ```
 
 ## Usage 
@@ -20,8 +20,8 @@ Just import the plugin in your project and use it like this
 using Typescript:
 
 ```typescript
-    import { Cscreenshot } from 'nativescript-cscreenshot';
-    import { ImageSource } from "tns-core-modules/image-source";
+    import { Cscreenshot } from "@enduco/nativescript-cscreenshot";
+    import { ImageSource } from "@nativescript/core";
 
     // then in your take a screenshot method
     let screen = new Cscreenshot();

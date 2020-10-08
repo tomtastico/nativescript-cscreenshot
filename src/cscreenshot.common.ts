@@ -1,14 +1,16 @@
-import { Observable } from 'tns-core-modules/data/observable';
-import { ViewBase } from 'tns-core-modules/ui/core/view';
+import { ViewBase, Observable } from "@nativescript/core";
 
 export class Common extends Observable implements screenShot {
-  public fileImage: File;
-  constructor() {
-    super();
-  }
-  take(view: ViewBase, callback: any){}
+    public fileImage: File;
+
+    constructor() {
+        super();
+    }
+
+    take(view: ViewBase, callback: any) {
+    }
 }
 
-export interface screenShot{
-  take(view: ViewBase, callback: any);
+export interface screenShot {
+    take(view: ViewBase, callback: any);
 }
